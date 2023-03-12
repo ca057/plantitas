@@ -1,3 +1,13 @@
-import { Text } from 'react-native';
+import { Text, SafeAreaView, StyleSheet } from 'react-native';
 
-export const Home = () => <Text>Plantitas</Text>;
+const styles = StyleSheet.create({
+  safeArea: {
+    flex: 1,
+  },
+});
+
+export const Home = () => (
+  <SafeAreaView style={styles.safeArea}>
+    <Text>Plantitas</Text>
+  </SafeAreaView>
+);

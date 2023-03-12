@@ -6,19 +6,21 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Home } from './screens/home';
 import { About } from './screens/about';
 
-const NoHeader = () => null;
+const NoRender = () => null;
 
 const BottomTabRoot = createBottomTabNavigator({
   screens: {
     Home: {
       options: {
-        header: NoHeader,
+        header: NoRender,
+        tabBarIcon: NoRender,
       },
       screen: Home,
     },
     About: {
       options: {
-        header: NoHeader,
+        header: NoRender,
+        tabBarIcon: NoRender,
       },
       screen: About,
     },
